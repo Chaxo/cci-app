@@ -7,7 +7,7 @@ from random import randrange
 # Introduction
 st.header ('**Welcome to my avatar/character creation interface**')
 st.markdown ("""
-Preview of the avatar and download option (PNG file) can be found below. Customization options can be found on the right side.
+Preview of the avatar and download option (PNG file) can be found below. Customization options can be found on the left side.
 """)
 
 # Changing Avatar List Names
