@@ -56,8 +56,8 @@ st.sidebar.subheader('Background & Skin')
 option_background = st.sidebar.selectbox('Background',list_background)
 option_skin_color = st.sidebar.selectbox('Skin Color',list_skin_color)
 
-st.sidebar.subheader('Hair/Hat')
-option_top_type = st.sidebar.selectbox('Head',list_top_type)
+st.sidebar.subheader('Hairstyle/Hat')
+option_top_type = st.sidebar.selectbox('Hairstyle',list_top_type)
 option_hair_color = st.sidebar.selectbox('Hair Color (applicable if a hairstyle is selected)',list_hair_color)
 option_hat_color = st.sidebar.selectbox('Hat Color (applicable if a hat is selected)',list_hat_color)
 
@@ -67,13 +67,15 @@ option_eye_type = st.sidebar.selectbox('Eye Type',list_eye_type)
 option_glasses_type = st.sidebar.selectbox('Glasses',list_glasses_type)
 option_mouth_type = st.sidebar.selectbox('Mouth',list_mouth_type)
 option_facial_hair_type = st.sidebar.selectbox('Facial Hair Type',list_facial_hair_type)
-option_facial_hair_color = st.sidebar.selectbox('Facial Hair Color',list_facial_hair_color)
+option_facial_hair_color = st.sidebar.selectbox('Facial Hair Color (applicable if a facial hair is selected)',list_facial_hair_color)
 
 st.sidebar.subheader('Clothe')
 option_clothe_type = st.sidebar.selectbox('Clothe',list_clothe_type)
 option_clothe_color = st.sidebar.selectbox('Clothe Color',list_clothe_color)
 option_clothe_graphic_type = st.sidebar.selectbox('Clothe Graphic (applicable if GRAPHIC_SHIRT is selected)',list_clothe_graphic_type)
 
+st.sidebar.subheader('Sex')
+st.sidebar.selectbox('',('Male','Female'))
 
 # Customize Avatar
 avatar = pa.PyAvataaar(
