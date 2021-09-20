@@ -2,7 +2,7 @@ import streamlit as st
 import py_avataaars as pa
 from PIL import Image
 import base64
-from random import randrange
+import random
 
 # Introduction
 st.header ('Welcome to this avatar customization application')
@@ -171,7 +171,7 @@ list_mouth_type = ['Happy','Concerned','Disbelief','Eating','Grimace','Sad','Sho
 list_eye_type = ['Open','Close','Cry','Dizzy','Eye_Roll','Happy','Hearts','Side','Squint','Surprised','Wink_1','Wink_2']
 list_eyebrow_type = ['Happy_1','Happy_2','Angry_1','Angry_2','Flat','Excited_1','Excited_2','Sad_1','Sad_2','Sad_3','Unibrow','Confused_1','Confused_2']
 list_glasses_type = ['Default','Kurt','Square_White','Square_Black','Round','Sunglasses','Wayfarers']
-list_clothe_type = ['Collar_Sweater','Graphic_Shirt','Hoodie','Shirt_Crew','Shirt_Scoop','Shirt_V_Neck']
+list_clothe_type = ['Hoodie','Collar_Sweater','Graphic_Shirt','Shirt_Crew','Shirt_Scoop','Shirt_V_Neck']
                     #Rmoved 'BLAZER_SHIRT' 'BLAZER_SWEATER' 'Overall'
 list_clothe_graphic_type = ['Bat','Deer','Diamond','Hola','Pizza','Bear','Skull_1','Skull_2']
 
@@ -193,10 +193,10 @@ option_mouth_type = st.sidebar.selectbox('Mouth',list_mouth_type,index=8)
 option_facial_hair_type = st.sidebar.selectbox('Facial Hair Type',list_facial_hair_type)
 option_facial_hair_color = st.sidebar.selectbox('Facial Hair Color (applicable if a facial hair is selected)',list_facial_hair_color)
 
-st.sidebar.subheader('Clothe')
-option_clothe_type = st.sidebar.selectbox('Clothe',list_clothe_type)
-option_clothe_color = st.sidebar.selectbox('Clothe Color',list_clothe_color)
-option_clothe_graphic_type = st.sidebar.selectbox('Clothe Graphic (applicable if GRAPHIC_SHIRT is selected)',list_clothe_graphic_type)
+st.sidebar.subheader('Clothing')
+option_clothe_type = st.sidebar.selectbox('Clothing',list_clothe_type)
+option_clothe_color = st.sidebar.selectbox('Clothing Color',list_clothe_color)
+option_clothe_graphic_type = st.sidebar.selectbox('Clothing Graphic (applicable if GRAPHIC_SHIRT is selected)',list_clothe_graphic_type)
 
 st.sidebar.subheader('Gender')
 st.sidebar.selectbox('',('Male','Female'))
