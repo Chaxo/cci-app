@@ -11,6 +11,8 @@ Preview of the avatar and download option (PNG file) can be found below. Customi
 st.markdown("If you encounter any errors, try selecting another option to resolve it. Otherwise, refresh the page.")
 
 # Change Avatar List Names
+
+# The right side is the property. The left is what can be changed
 # Background
 pa.AvatarStyle.Circle = pa.AvatarStyle.CIRCLE
 pa.AvatarStyle.Transparent = pa.AvatarStyle.TRANSPARENT
@@ -156,6 +158,7 @@ pa.ClotheGraphicType.Skull_2 = pa.ClotheGraphicType.SKULL_OUTLINE
 
 
 # Avatar Options Lists
+# The ordering of the list can be changed here
 list_background = ['Circle','Transparent']
 list_skin_color = ['Pale','Tanned','Yellow','Black','Light','Brown','Dark_Brown']
 list_hair_color = ['Blonde','Auburn','Black','Blonde_Golden','Brown','Brown_Dark','Pastel_Pink','Platinum','Red','Silver_Gray']
@@ -199,7 +202,7 @@ option_clothe_color = st.sidebar.selectbox('Clothing Color',list_clothe_color)
 option_clothe_graphic_type = st.sidebar.selectbox('Clothing Graphic (applicable if GRAPHIC_SHIRT is selected)',list_clothe_graphic_type)
 
 st.sidebar.subheader('Gender')
-st.sidebar.selectbox('',('Male','Female'))
+st.sidebar.selectbox('',('Male','Female','Other'))
 
 # Customize Avatar
 avatar = pa.PyAvataaar(
