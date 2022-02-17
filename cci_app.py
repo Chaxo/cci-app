@@ -239,6 +239,10 @@ st.markdown(imagedownload('avatar.png'), unsafe_allow_html=True)
 
 #st.write('---')
 
+# Link can be changed
+link = '[Click here to go back to survey](http://github.com)'
+st.markdown(link, unsafe_allow_html=True)
+
 #st.markdown("""
 #Credits:
 #+ [py-avataars library](https://github.com/kebu/py-avataaars)
